@@ -1,0 +1,48 @@
+﻿@model LoginModel
+
+@{
+	ViewBag.Title = "Вход";
+}
+
+<body class="backgr-gradient">
+@Html.Partial("~/Views/Header/WithoutIn.cshtml");
+
+<!--Форма регистрации-->
+	<form action="/Auth/LoginForm" method="post">
+		@Html.AntiForgeryToken()
+		<div class="container common">
+			<div class="modal-dialog  modal-dialog-centered modal-xl">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+						<p>@Html.ValidationSummary(true)</p>
+					</div>
+
+					<div class="modal-body">
+						<div class="mb-3">
+								<label for="exampleFormControlInput1" class="form-label">Логин</label>
+								<input name="login" class="form-control" id="exampleFormControlInput1">
+						</div>
+						<div class="mb-3">
+								<label type="password" for="exampleFormControlInput1" class="form-label">Пароль</label>
+								<input name="password" type="password" class="form-control" id="exampleFormControlInput1">
+						</div>
+					</div>
+
+					<div class="modal-footer">
+							<button type="submit" class="btn btn-primary">Войти</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+<style>
+	li
+	{
+		color: red;
+		font-size: 30px;
+	}
+</style>

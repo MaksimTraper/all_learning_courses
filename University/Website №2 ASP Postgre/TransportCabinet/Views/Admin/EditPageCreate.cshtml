@@ -1,0 +1,57 @@
+﻿@model EditPage2Model
+
+@{
+    ViewBag.Title = "Форма создания данных";
+}
+
+<body>
+    @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.user);
+    <div class="container common" style="width= 100%;">
+        @{
+            List<string> variables = new List<string>();
+
+            @if (Model.selected == "Водители")
+            {
+                variables = Model.names.valuesDriver;
+            }
+            else if (Model.selected == "Маршруты")
+            {
+                variables = Model.names.valuesRoute;
+            }
+            else if (Model.selected == "Транспорт")
+            {
+                variables = Model.names.valuesTransport;
+            }
+            else if (Model.selected == "Транспортные карты")
+            {
+                variables = Model.names.valuesTransportCard;
+            }
+            else if (Model.selected == "Поездки")
+            {
+                variables = Model.names.valuesTrip;
+            }
+            else if (Model.selected == "Пользователи")
+            {
+                variables = Model.names.valuesUser;
+            }
+            else if (Model.selected == "Модели транспорта")
+            {
+                variables = Model.names.valuesTransportVehicle;
+            }
+            else if (Model.selected == "Случаи пополнения")
+            {
+                variables = Model.names.valuesPurchase;
+            }
+        }
+
+        <form action="/Admin/CreateDBInfo" method="post">
+            @for (int i = 0; i < variables.Count; i++)
+            {
+                <label class="form-label">@variables[i]</label>
+                <input class="form-control" name="@variables[i]" />
+            }
+            <button type="submit" class="btn btn-primary" style="margin-top: 1%">Создать</button>
+        </form>
+    </div>
+
+</body>

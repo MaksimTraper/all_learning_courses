@@ -1,0 +1,15 @@
+﻿@model AllAboutUser
+
+@{
+    ViewBag.Title = "Панель администратора";
+}
+
+<body>
+    @Html.Partial("~/Views/Header/Authtorized.cshtml", Model);
+    <div class="container mx-auto my-auto d-flex" style="width= 100%;">
+        <div class="row mx-auto">
+            <button type="submit" class="btn btn-primary" style="margin: 10px" onclick="location.href='@Url.Action("EditPage", "Admin")'">Смена информации в базе данных</button>
+            <button type="submit" class="btn btn-primary" style="margin: 10px" onclick="location.href='@Url.Action("SQLQuery", "Admin")'">SQL-запрос</button>
+        </div>
+    </div>
+</body>

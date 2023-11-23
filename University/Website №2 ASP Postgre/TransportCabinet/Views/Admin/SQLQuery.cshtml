@@ -1,0 +1,88 @@
+﻿@model SqlQueryModel
+
+@{
+    ViewBag.Title = "SQL-запрос";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<body style="overflow: scroll">
+
+
+    @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.user);
+
+
+    <div class="container mx-auto my-auto d-flex" style="width= 100%;">
+        <div class="row mx-auto">
+            <div class="form-group">
+                <form action="/Admin/SQLQuery" method="post">
+                    <h1>Форма для запроса</h1>
+                    <textarea name="query" class="form-control" id="exampleFormControlTextarea1" rows="8" cols="250"></textarea>
+                    <button type="submit" class="btn btn-primary" style="margin: 10px" onclick="location.href='@Url.Action("SQLQuery", "Admin")'">Выполнить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    @if (Model.results != null)
+    {
+        if (Model.results.Count > 0)
+        {
+            if (Model.CountColumns > 0)
+            {
+                <div class="container mx-auto my-auto d-flex" style="width= 100%;">
+                    <div class="row mx-auto">
+                        <h1>Результаты: </h1>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">№</th>
+                                    @for (int i = 0; i < Model.CountColumns; i++)
+                                    {
+                                        <th scope="col">@Model.results[i]</th>
+                                    }
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 1; i < Model.results.Count / Model.CountColumns; i++)
+                                {
+                                    <tr>
+                                        <th scope="row">@i</th>
+                                        @for (int y = 0; y < Model.CountColumns; y++)
+                                        {
+                                            <td>@Model.results[i * Model.CountColumns + y]</td>
+                                        }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            }
+        }
+    }
+    @if (Model.results != null)
+    {
+        if (Model.results.Count > 0)
+        {
+            @if (Model.CountColumns == 0)
+            {
+                <div class="container" style="width: 80%; background: white; border-radius: 50px; border: 2px solid grey;">
+                    <div class="row">
+                        <div class="d-flex align-items-center">
+                            <h1 style="color: red">Ошибка!!!</h1>
+                            <h3>@Convert.ToString(Model.results[0])</h3>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+    }
+</body>
+</html>
+
+<style>
+
+</style>

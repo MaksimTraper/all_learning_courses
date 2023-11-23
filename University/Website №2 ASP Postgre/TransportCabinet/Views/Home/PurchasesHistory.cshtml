@@ -1,0 +1,57 @@
+﻿@model PurchasesView
+
+@{
+    ViewBag.Title = "История покупок";
+}
+
+<body>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.GetUser())
+        ;
+    }
+    else
+    {
+        @Html.Partial("~/Views/Header/WithoutIn.cshtml")
+        ;
+    }
+
+    <div class="container common">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Операция</th>
+                    <th scope="col">Цена</th>
+                    <th scope="col">Кол-во дней (если продлевался проездной)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach (var purchase in Model.GetPurchases())
+                    {
+                    <tr>
+                    @if (purchase.name_purchase == "buy days")
+                    {
+                        <td>Продление проездного</td>
+                    }
+                    else
+                    {
+                        <td>Пополнение баланса</td>
+                    }
+                        <td>@purchase.price</td>
+
+                    @if (purchase.name_purchase == "buy days")
+                    {
+                         <td>@purchase.amount</td>
+                    }
+                    else
+                    {
+                         <td></td>
+                    }
+                    </tr>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

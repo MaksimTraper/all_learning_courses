@@ -1,0 +1,40 @@
+﻿@model AllAboutUser
+
+<header class="p-3 text-white">
+	<div class="container-fluid headernav">
+		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+				<img src="../../Content/img/logo.png" border=”0”>
+				<img src="../../Content/img/logoname.png" border=”0”>
+			</a>
+			<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+				<li><a onclick="location.href='@Url.Action("BuyCard", "Home")'" class="nav-link px-2 text-white nav-btn">Пополнить карту</a></li>
+				<li><a onclick="location.href='@Url.Action("History", "Home")'" class="nav-link px-2 text-white nav-btn">История поездок</a></li>
+				<li><a onclick="location.href='@Url.Action("TransportVehicles", "Home")'" class="nav-link px-2 text-white nav-btn">Подвижной состав</a></li>
+				<li><a onclick="location.href='@Url.Action("PurchasesHistory", "Home")'" class="nav-link px-2 text-white nav-btn">История покупок</a></li>
+			</ul>
+
+			<div class="flex-shrink-0 dropdown" data-bs-toggle='dropdown'>
+				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+				   data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="../../Content/img/profile_com_ph.png" alt="mdo" width="40" height="32"
+						 class="rounded-circle imgcab">
+				</a>
+				<ul class="dropdown-menu text-large shadow" aria-labelledby="dropdownUser2" data-bs-toggle='dropdown'>
+					<li><a class="dropdown-item">№ транспортной карты: @Convert.ToString(Model.GetCard().pk_id_card)<a></li>
+					<li><a class="dropdown-item">Баланс: @Math.Round(Convert.ToDouble(Model.GetCard().balance), 2)</a></li>
+					<li><a class="dropdown-item">Кол-во дней: @Math.Round(Convert.ToDouble(Model.GetCard().num_days), 2)</a></li>
+					<li>
+						<hr class="dropdown-divider">
+					</li>
+					<li><a class="dropdown-item" onclick="location.href='@Url.Action("PrivateCab", "Home")'">Личный кабинет</a></li>
+					@if ((Model.GetUser()).role == "admin")
+					{
+						<li><a class="dropdown-item" onclick="location.href='@Url.Action("AdminPanel", "Admin")'">Панель администратора</a></li>
+					}
+					<li><a class="dropdown-item" onclick="location.href='@Url.Action("Logout", "Auth")'">Выйти</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

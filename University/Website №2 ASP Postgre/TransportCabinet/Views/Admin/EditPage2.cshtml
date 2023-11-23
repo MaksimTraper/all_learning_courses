@@ -1,0 +1,100 @@
+﻿@model EditPage2Model
+
+@{
+    ViewBag.Title = "Форма смены данных";
+}
+
+<body>
+    @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.user);
+    <div class="container common" style="width= 100%;">
+        @{
+            List<string> variables = new List<string>();
+            List<string> values = new List<string>();
+
+            @if (Model.selected == "Водители")
+            {
+                variables = Model.names.valuesDriver;
+
+                values.Add(Convert.ToString(Model.trip.pk_num_trip));
+                values.Add(Convert.ToString(Model.driver.pk_id_driver));
+                values.Add(Convert.ToString(Model.driver.name));
+                values.Add(Convert.ToString(Model.driver.surname));
+                values.Add(Convert.ToString(Model.driver.patronymic));
+            }
+            else if (Model.selected == "Маршруты")
+            {
+                variables = Model.names.valuesRoute;
+
+                values.Add(Convert.ToString(Model.route.pk_id_route));
+                values.Add(Convert.ToString(Model.route.start_point));
+                values.Add(Convert.ToString(Model.route.end_point));
+            }
+            else if (Model.selected == "Транспорт")
+            {
+                variables = Model.names.valuesTransport;
+
+                values.Add(Convert.ToString(Model.transport.pk_car_num));
+                values.Add(Convert.ToString(Model.transport.fk_id_vehicle));
+            }
+            else if (Model.selected == "Транспортные карты")
+            {
+                variables = Model.names.valuesTransportCard;
+
+                values.Add(Convert.ToString(Model.card.pk_id_card));
+                values.Add(Convert.ToString(Model.card.fk_id_owner));
+                values.Add(Convert.ToString(Model.card.balance));
+                values.Add(Convert.ToString(Model.card.data_issue));
+            }
+            else if (Model.selected == "Поездки")
+            {
+                variables = Model.names.valuesTrip;
+
+                values.Add(Convert.ToString(Model.trip.pk_num_trip));
+                values.Add(Convert.ToString(Model.trip.fk_id_tr));
+                values.Add(Convert.ToString(Model.trip.fk_id_card));
+                values.Add(Convert.ToString(Model.trip.fk_id_driver));
+                values.Add(Convert.ToString(Model.trip.time_pay));
+                values.Add(Convert.ToString(Model.trip.num_route));
+            }
+            else if (Model.selected == "Пользователи")
+            {
+                variables = Model.names.valuesUser;
+                values.Add(Convert.ToString(Model.userAc.passport_num));
+                values.Add(Convert.ToString(Model.userAc.name));
+                values.Add(Convert.ToString(Model.userAc.surname));
+                values.Add(Convert.ToString(Model.userAc.patronymic));
+                values.Add(Convert.ToString(Model.userAc.pk_login));
+                values.Add(Convert.ToString(Model.userAc.password));
+                values.Add(Convert.ToString(Model.userAc.email));
+                values.Add(Convert.ToString(Model.userAc.role));
+                values.Add(Convert.ToString(Model.userAc.birthday));
+            }
+            else if (Model.selected == "Модели транспорта")
+            {
+                variables = Model.names.valuesTransportVehicle;
+                values.Add(Convert.ToString(Model.vehicle.pk_id_vehicle));
+                values.Add(Convert.ToString(Model.vehicle.brand));
+                values.Add(Convert.ToString(Model.vehicle.model));
+            }
+            else if (Model.selected == "Случаи пополнения")
+            {
+                variables = Model.names.valuesPurchase;
+                values.Add(Convert.ToString(Model.purchase.pk_num_purchase));
+                values.Add(Convert.ToString(Model.purchase.fk_id_card)); 
+                values.Add(Convert.ToString(Model.purchase.name_purchase)); 
+                values.Add(Convert.ToString(Model.purchase.price)); 
+                values.Add(Convert.ToString(Model.purchase.amount));
+            }
+        }
+
+        <form action="/Admin/ChangeDBInfo" method="post">
+            @for (int i = 0; i < variables.Count; i++)
+            {
+                <label class="form-label">@variables[i]</label>
+                <input class="form-control" name="@variables[i]" value="@values[i]"/>
+            }
+            <button type="submit" class="btn btn-primary" style="margin-top: 1%">Сменить данные</button>
+        </form>
+    </div>
+
+</body>

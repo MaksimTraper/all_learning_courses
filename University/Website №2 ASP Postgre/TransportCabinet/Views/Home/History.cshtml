@@ -1,0 +1,35 @@
+﻿@model HistoryView
+
+@{
+    ViewBag.Title = "История поездок";
+}
+
+<body>
+    @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.GetUser())
+
+    <div class="container common">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Водитель</th>
+                    <th scope="col">Маршрут</th>
+                    <th scope="col">Время оплаты</th>
+                    <th scope="col">№ рейса</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach (var trip in Model.GetTrips())
+                    {
+                    <tr>
+                        <td>@Model.GetNeedDriver(trip.fk_id_driver)</td>
+                        <td>@trip.num_route</td>
+                        <td>@trip.time_pay</td>
+                        <td>@trip.pk_num_trip</td>
+                    </tr>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

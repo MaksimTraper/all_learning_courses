@@ -1,0 +1,209 @@
+﻿@model PrivateCabModel
+
+<!DOCTYPE html>
+<html lang="ru">
+
+@{
+    ViewBag.Title = "Личный кабинет";
+}
+
+<body class="backgr-gradient">
+    @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.getUser());
+
+    <div class="container common">
+        @if (Model.getMessage() != null)
+        {
+            <div class="row">
+                <p class="text-center error">@Model.getMessage()</p>
+                <hr class="hr" />
+            </div>
+        }
+        <div class="row">
+            <!--Аватар пользователя-->
+            <div class="col-3">
+                <div class="container">
+                    <div class="row">
+                        <p class="text-center hCont">Аватар</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            @if (Model.getUser().GetPhoto() == null)
+                            {
+                                <img src="../../Content/img/profile_com_ph.png" class="img-fluid mx-auto d-block" style="border: 2px solid grey;" width="80%" runat="server">
+                            }
+                            else
+                            {
+                                <img src="@Model.getUser().GetPhoto()" class="img-fluid mx-auto d-block" style="border: 2px solid grey;" width="80%" runat="server" />
+                            }
+
+                            <form action="/Home/LoadPhoto" method="post" enctype="multipart/form-data">
+                                <input type="file" style="margin-top: 5%" name="uploads" /><br>
+                                <input type="submit" class="btn btn-primary form-control-file" style="margin-left: 25%; margin-top: 5%" value="Подтвердить" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Пользовательские данные-->
+            <div class="col">
+
+                <form action="/Home/ChangeInfo" method="post">
+                    <div class="container">
+                        <div class="row">
+                            <p class="text-center hCont">Пользовательские данные</p>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">Фамилия</label>
+                                    <input name="surname" class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetUser().surname>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">Имя</label>
+                                    <input name="name" class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetUser().name>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">Отчество</label>
+                                    <input name="patronymic" class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetUser().patronymic>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">E-mail</label>
+                                    <input name="email" class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetUser().email>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">Логин</label>
+                                    <input name="pk_login" class="form-control" id="exampleFormControlInput1" readonly value=@Model.getUser().GetUser().pk_login>
+                                </div>
+                            </div>
+                            <div class="row">
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">№ паспорта</label>
+                                    <input name="passport_num" class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetUser().passport_num>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <form class="mb-3">
+                                    <label for="exampleFormControlnput1" class="form-label">Дата рождения (М/Д/Г)</label>
+                                    <div class="input-group date" id="datepicker">
+                                        <input name="birthday" class="form-control" value=@Model.getUser().GetUser().birthday>
+                                        <span class="input-group-append">
+                                            <span class="input-group-text bg-white" style="min-height: 100%;">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-grid col-12">
+                                <div class="d-grid mb-3">
+                                    <button type="submit" class="btn btn-primary">Сменить данные</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <!--Данные о транспортной карте-->
+        <div class="row">
+            <p class="text-center hCont">Данные о транспортной карте</p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlnput1" class="form-label">№ транспортной карты</label>
+                    <input class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetCard().pk_id_card readonly>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleFormControlnput1" class="form-label">Дата выдачи (М/Д/Г)</label>
+                    <input class="form-control" id="exampleFormControlInput1" value=@Model.getUser().GetCard().data_issue readonly>
+                </div>
+            </div>
+        </div>
+
+        <!--Смена пароля-->
+        <div class="row">
+            <p class="text-center hCont">Смена пароля</p>
+        </div>
+        <form action="/Home/ChangePassword" method="post">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlnput1" class="form-label">Введите старый пароль</label>
+                        <input name="password" type="password" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlnput1" class="form-label">Введите вновь</label>
+                        <input name="confirmPassword" type="password" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlnput1" class="form-label">Введите новый пароль</label>
+                        <input name="newPassword" type="password" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" style="margin: 10px">Сменить пароль</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#datepicker').datepicker();
+        });
+    </script>
+</body>
+
+</html>
+
+<style>
+    .square {
+        border: 2px solid grey;
+        width: 100%;
+        height: 100%;
+        margin-top: 20%;
+    }
+
+    .commond {
+        width: 30%;
+        height: 40%;
+        background: white;
+        border-radius: 50px;
+        border: 2px solid grey;
+        margin: 10px;
+    }
+
+    .hCont {
+        font-size: 25px;
+        font-color: black;
+        font-style: bold;
+    }
+
+    .error {
+        font-size: 35px;
+        color: red;
+        font-style: bold;
+    }
+</style>

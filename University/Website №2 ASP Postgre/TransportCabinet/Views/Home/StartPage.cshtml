@@ -1,0 +1,39 @@
+﻿@model AllAboutUser
+
+@{
+    ViewBag.Title = "Стартовая страница";
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+<body class="backgr-gradient">
+	@if (User.Identity.IsAuthenticated & Model != null)
+	{
+		@Html.Partial("~/Views/Header/Authtorized.cshtml", Model);
+	}
+	else
+	{
+		@Html.Partial("~/Views/Header/WithoutIn.cshtml");
+	}
+
+	<div class="container">
+		<div class="flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+			<h1>Добро пожаловать в личный кабинет пассажира!<br></h1>
+			<h1>Здесь вы можете:</h1>
+			<h1 class="points">·Пополнить транспортную карту</h1>
+			<h1 class="points">·Изучить подвижной состав</h1>
+			<h1 class="points">·Посмотреть историю поездок</h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="d-flex align-items-center justify-content-center">
+			<img src="../../Content/img/cat.png" class="rounded mx-auto d-block" border=”0”>
+			<img src="../../Content/img/trol.png" class="rounded mx-auto d-block" border=”0”>
+		</div>
+	</div>
+</body>
+
+</html>

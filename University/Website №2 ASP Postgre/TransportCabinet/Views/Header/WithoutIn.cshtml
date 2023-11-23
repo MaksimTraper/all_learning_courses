@@ -1,0 +1,24 @@
+﻿<header class="p-3 text-white">
+	<div class="container-fluid headernav">
+		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+			<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+				<img src="../../Content/img/logo.png" border=”0”>
+				<img src="../../Content/img/logoname.png" border=”0”>
+			</a>
+			<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+				<li><a href="#" class="nav-link px-2 text-white nav-btn" onclick="location.href='@Url.Action("TransportVehicles", "Home")'">Подвижной состав</a></li>
+			</ul>
+
+			<div class="text-end">
+				<button type="button" class="btn btn-login btn-outline-light me-2 btn-rounded"
+						data-bs-toggle="modal" data-bs-target="#loginModal" onclick="location.href='@Url.Action("LoginForm", "Auth")'">
+					Войти
+				</button>
+				<button type="button" class="btn btn-signup btn-warning" data-bs-toggle="modal"
+						data-bs-target="#signupModal" onclick="location.href='@Url.Action("SignupForm", "Auth")'">
+					<a style="text-decoration: none; color:inherit"> Зарегистрироваться</a>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>

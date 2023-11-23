@@ -1,0 +1,45 @@
+﻿@model VehiclesView
+
+@{
+    ViewBag.Title = "Подвижной состав";
+}
+
+<body>
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.Partial("~/Views/Header/Authtorized.cshtml", Model.GetUser())
+        ;
+    }
+    else
+    {
+        @Html.Partial("~/Views/Header/WithoutIn.cshtml")
+        ;
+    }
+
+    <div class="container common">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Автомобильный номер транспорта</th>
+                    <th scope="col">Бренд</th>
+                    <th scope="col">Модель</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    @foreach (var car in Model.GetCars())
+                    {
+                        var transport = car.GetCar();
+                        var vehicle = car.GetVehicle();
+
+                    <tr>
+                        <td>@transport.pk_car_num</td>
+                        <td>@vehicle.brand</td>
+                        <td>@vehicle.model</td>
+                    </tr>
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>

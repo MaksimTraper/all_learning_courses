@@ -1,0 +1,66 @@
+﻿@model SignupModel
+
+@{
+	ViewBag.Title = "Регистрация";
+}
+
+<body class="backgr-gradient">
+@Html.Partial("~/Views/Header/WithoutIn.cshtml");
+
+<!--Форма регистрации-->
+	<form action="/Auth/SignupForm" method="post">
+		@Html.AntiForgeryToken()
+		<div class="container common">
+			<div class="modal-dialog  modal-dialog-centered modal-xl">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+						<p>@Html.ValidationSummary(true)</p>
+					</div>
+
+					<div class="modal-body">
+						<div class="mb-3">
+								<label type="Email" for="exampleFormControlInput1" class="form-label">E-mail</label>
+								<input name="Email" class="form-control" id="exampleFormControlInput1"
+								   placeholder="Пример: name@example.com">
+								@Html.ValidationMessageFor(model => model.Email, "", new { @style = "color: red; font-size: 15px; font-weight: bold;"})
+						</div>
+						<div class="mb-3">
+								<label type="Login" for="exampleFormControlInput1" class="form-label">Логин</label>
+								<input name="Login" class="form-control" id="exampleFormControlInput1">
+								@Html.ValidationMessageFor(model => model.Login, "", new { @style = "color: red; font-size: 15px; font-weight: bold;"})
+						</div>
+						<div class="mb-3">
+								<label type="Password" for="exampleFormControlnput1" class="form-label">Пароль</label>
+								<input name="Password" type="password" class="form-control" id="exampleFormControlInput1">
+								@Html.ValidationMessageFor(model => model.Password, "", new { @style = "color: red; font-size: 15px; font-weight: bold;"})
+						</div>
+						<div class="mb-3">
+								<label type="ConfirmPassword" for="exampleFormControlnput1" class="form-label">Подтвердите пароль</label>
+								<input name="ConfirmPassword" type="password" class="form-control" id="exampleFormControlInput1">
+								@Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @style = "color: red; font-size: 15px; font-weight: bold;"})
+						</div>
+						<div class="mb-3">
+								<label type="PassportNum" for="exampleFormControlInput1" class="form-label">Серия и номер паспорта</label>
+								<input name="passport_num" class="form-control" id="exampleFormControlInput1">
+								@Html.ValidationMessageFor(model => model.passport_num, "", new { @style = "color: red; font-size: 15px; font-weight: bold;"})
+						</div>
+					</div>
+
+					<div class="modal-footer">
+							<button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+<style>
+	li
+	{
+		color: red;
+		font-size: 30px;
+	}
+</style>
