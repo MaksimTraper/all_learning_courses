@@ -1,0 +1,2 @@
+equ (a 5)
+print
