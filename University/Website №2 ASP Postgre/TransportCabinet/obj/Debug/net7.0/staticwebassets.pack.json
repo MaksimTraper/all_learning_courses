@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Content\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\MaksudUchihaavatar.png",
+      "PackagePath": "staticwebassets\\Content\\img\\MaksudUchihaavatar.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\cat.png",
+      "PackagePath": "staticwebassets\\Content\\img\\cat.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Content\\img\\logo.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\logoname.png",
+      "PackagePath": "staticwebassets\\Content\\img\\logoname.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\profile_com_ph.png",
+      "PackagePath": "staticwebassets\\Content\\img\\profile_com_ph.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\trol.png",
+      "PackagePath": "staticwebassets\\Content\\img\\trol.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\viktorbludavatar.png",
+      "PackagePath": "staticwebassets\\Content\\img\\viktorbludavatar.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Content\\img\\viktorrrbludavatar.png",
+      "PackagePath": "staticwebassets\\Content\\img\\viktorrrbludavatar.png"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Scripts\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\Флешка\\ВУЗ\\5 семестр\\Базы данных\\Курсовая\\TransportCabinet\\wwwroot\\Scripts\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\bootstrap.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TransportCabinet.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TransportCabinet.props",
+      "PackagePath": "build\\TransportCabinet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TransportCabinet.props",
+      "PackagePath": "buildMultiTargeting\\TransportCabinet.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TransportCabinet.props",
+      "PackagePath": "buildTransitive\\TransportCabinet.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

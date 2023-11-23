@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TransportCabinet
+build_property.RootNamespace = TransportCabinet
+build_property.ProjectDir = F:\Флешка\ВУЗ\5 семестр\Базы данных\Курсовая\TransportCabinet\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Флешка\ВУЗ\5 семестр\Базы данных\Курсовая\TransportCabinet
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Admin/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Admin/EditPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Admin/EditPage2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFBhZ2UyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Admin/EditPageCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFBhZ2VDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Admin/SQLQuery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU1FMUXVlcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Auth/LoginForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbkZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Auth/SignupForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXBGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Header/Authtorized.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyXEF1dGh0b3JpemVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Header/WithoutIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVhZGVyXFdpdGhvdXRJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/BuyCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdXlDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/PrivateCab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YXRlQ2FiLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/PurchasesHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQdXJjaGFzZXNIaXN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/StartPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFydFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/TransportVehicles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFuc3BvcnRWZWhpY2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Home/Unavailable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVbmF2YWlsYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Флешка/ВУЗ/5 семестр/Базы данных/Курсовая/TransportCabinet/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
