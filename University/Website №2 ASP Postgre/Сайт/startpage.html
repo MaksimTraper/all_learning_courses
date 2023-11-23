@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Демо Bootstrap</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="backgr-gradient">
+	<header class="p-3 text-white">
+		<div class="container-fluid headernav">
+			<div
+				class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+				<a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+					<img src="img/logo.png" border=”0”>
+					<img src="img/logoname.png" border=”0”>
+				</a>
+				<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+					<li><a href="#" class="nav-link px-2 text-white nav-btn">Подвижной состав</a></li>
+				</ul>
+
+				<div class="text-end">
+					<button type="button" class="btn btn-login btn-outline-light me-2 btn-rounded"
+						data-bs-toggle="modal" data-bs-target="#loginModal">Войти</button>
+					<button type="button" class="btn btn-signup btn-warning" data-bs-toggle="modal"
+						data-bs-target="#signupModal">Зарегистрироваться</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--Форма входа-->
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog  modal-dialog-centered modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Логин/E-mail</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1"
+							placeholder="Пример: name@example.com">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlnput1" class="form-label">Пароль</label>
+						<input type="password" class="form-control" id="exampleFormControlInput1"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Войти</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Форма регистрации-->
+	<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog  modal-dialog-centered modal-xl">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">E-mail</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1"
+							placeholder="Пример: name@example.com">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Логин</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label">Серия и номер паспорта</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1"
+							placeholder="Пример: 4025457135">
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlnput1" class="form-label">Пароль</label>
+						<input type="password" class="form-control" id="exampleFormControlInput1"></textarea>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Зарегистрироваться</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
+	<div class="container">
+		<div class="flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+			<h1>Добро пожаловать в личный кабинет пассажира!<br></h1>
+			<h1>Здесь вы можете:</h1>
+			<h1 class="points">·Пополнить транспортную карту</h1>
+			<h1 class="points">·Изучить подвижной состав</h1>
+			<h1 class="points">·Посмотреть историю поездок</h1>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="d-flex align-items-center justify-content-center">
+			<img src="img/cat.png" class="rounded mx-auto d-block" border=”0”>
+			<img src="img/trol.png" class="rounded mx-auto d-block" border=”0”>
+		</div>
+	</div>
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>
+
+<style>
+	.headernav {
+		width: 90%
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	.backgr-gradient {
+		width: 100%;
+		height: 1024px;
+		overflow: hidden;
+		position: relative;
+		align-items: flex-start;
+		flex-shrink: 0;
+		background-image: linear-gradient(180deg,
+				rgba(17, 125, 203, 1) 0%,
+				rgba(255, 255, 255, 0) 96%,
+				rgba(255, 255, 255, 0) 96%,
+				rgba(255, 255, 255, 0) 100%);
+	}
+
+	.btn-signup {
+		background-color: #6CC2FF;
+		border: 1px solid #000000;
+		color: white;
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+	.btn-login {
+		min-width: 120px;
+		padding: 10px;
+		border-radius: 20px;
+	}
+
+	.btn-signup:hover,
+	.btn-login:hover {
+		background-color: white;
+		color: black;
+		border: 1px solid #000000;
+	}
+
+	.nav-btn {
+		font-size: 25px;
+		text-indent: 30px;
+	}
+
+	.nav-btn:hover {
+		font-size: 35px;
+	}
+
+	h1,
+	ul {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 50px;
+		line-height: 61px;
+		/* identical to box height */
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+	}
+
+	.points {
+		padding-left: 5%;
+	}
+
+	.imge {
+		text-align: center;
+	}
+</style>

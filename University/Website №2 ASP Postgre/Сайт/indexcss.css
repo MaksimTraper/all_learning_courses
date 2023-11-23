@@ -1,0 +1,435 @@
+.desktop-1 {
+  background: linear-gradient(
+    180deg,
+    var(--dodger-blue) 0%,
+    rgba(17, 125, 203, 1) 0%,
+    rgba(17, 125, 203, 1) 9%,
+    rgba(63, 131, 180, 0.34) 95%,
+    rgba(86, 134, 169, 0) 100%
+  );
+  padding: 0 23px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.shapka {
+  margin-bottom: 68px;
+  padding: 0 457px 3px 0;
+  position: relative;
+}
+.flex-wrapper-two {
+  padding: 9px 1062px 1px 11px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.bus-th-transformed-1 {
+  width: 96px;
+  height: 62px;
+  margin-top: 5px;
+}
+.passazhirskij-kabinet {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(111, 194, 255, 1);
+  font-style: italic;
+  font-family: var(--poppins-36-bold-family);
+  font-size: var(--poppins-36-bold-size);
+  font-weight: var(--poppins-36-bold-weight);
+  line-height: var(--poppins-36-bold-line-height);
+}
+.passazhirskij-kabinet-emphasis-1 {
+  color: rgba(255, 255, 255, 1);
+  font-style: italic;
+  font-family: var(--poppins-36-bold-family);
+  font-size: var(--poppins-36-bold-size);
+  font-weight: var(--poppins-36-bold-weight);
+  line-height: var(--poppins-36-bold-line-height);
+}
+.dannye-o-karte {
+  padding: 4px 0 0;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+.lichnyj-kabinet {
+  color: var(--black);
+  position: absolute;
+  left: 266px;
+  top: 0;
+  font-family: var(--alegreya-28-regular-family);
+  font-size: var(--alegreya-28-regular-size);
+  font-weight: var(--alegreya-28-regular-weight);
+  line-height: var(--alegreya-28-regular-line-height);
+}
+.karty {
+  color: var(--black);
+  position: absolute;
+  left: 22px;
+  top: 0;
+  font-family: var(--alegreya-28-regular-family);
+  font-size: var(--alegreya-28-regular-size);
+  font-weight: var(--alegreya-28-regular-weight);
+  line-height: var(--alegreya-28-regular-line-height);
+}
+.flex-wrapper-one {
+  background-color: rgba(108, 194, 255, 1);
+  border-radius: 50px;
+  padding: 23px 78px 1px 21px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border: 1px solid var(--black);
+}
+.balans {
+  color: var(--black-3);
+  margin-right: 214px;
+  font-family: var(--alegreya-28-regular-family);
+  font-size: var(--alegreya-28-regular-size);
+  font-weight: var(--alegreya-28-regular-weight);
+  line-height: var(--alegreya-28-regular-line-height);
+}
+.vyjti {
+  width: 81px;
+  color: var(--black);
+  font-family: var(--alegreya-28-regular-family);
+  font-size: var(--alegreya-28-regular-size);
+  font-weight: var(--alegreya-28-regular-weight);
+  line-height: var(--alegreya-28-regular-line-height);
+}
+.line-3 {
+  width: 1px;
+  height: 62px;
+  background-color: var(--black);
+  position: absolute;
+  right: 230px;
+  top: -1px;
+}
+.knopki {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 655px;
+  bottom: 0;
+}
+.istorija-poezdok {
+  height: 90px;
+  width: 119px;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 42px;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.popolnit-kartu {
+  max-width: 155px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-right: 38px;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.podvizhnoj-sostav {
+  max-width: 166px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.obschee-okno {
+  background-color: rgba(200, 223, 239, 1);
+  margin-bottom: 71px;
+  margin-left: 33px;
+  border-radius: 50px;
+  padding: 4px 34px 38px 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flex-wrapper-three {
+  display: flex;
+  align-items: flex-start;
+}
+.flex-wrapper-three:not(:last-of-type) {
+  margin-bottom: 31px;
+}
+.avatar-three {
+  margin-top: 21px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.avatar-two {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.avatar {
+  width: 230px;
+  color: var(--black);
+  text-align: center;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.rectangle-7 {
+  width: 226px;
+  height: 271px;
+  border: 2px solid var(--black);
+}
+.knopka {
+  padding: 3px 0 0;
+  position: relative;
+}
+.rectangle-18 {
+  width: 228px;
+  height: 38px;
+  background-color: rgba(108, 193, 255, 1);
+  border-radius: 50px;
+  position: relative;
+  border: 1px solid var(--black);
+}
+.zagruzit-foto {
+  height: 40px;
+  width: 209px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.smena-dannyh {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.group-1 {
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dannye {
+  width: 1029px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 9px;
+  font-family: var(--alegreya-48-regular-family);
+  font-size: var(--alegreya-48-regular-size);
+  font-weight: var(--alegreya-48-regular-weight);
+  line-height: var(--alegreya-48-regular-line-height);
+}
+.dannye-two {
+  padding: 83px 0 0;
+  display: flex;
+  align-items: flex-start;
+}
+.relative-wrapper-one {
+  margin-top: 85px;
+  margin-right: 25px;
+  position: relative;
+}
+.pasporta-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.pasporta {
+  color: var(--black);
+  text-align: center;
+  margin-left: 162px;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.rectangle-13 {
+  width: 500px;
+  height: 41px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid var(--black);
+}
+.familija-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: -168px;
+}
+.familija {
+  color: var(--black);
+  text-align: center;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.rectangle-15 {
+  width: 281px;
+  height: 39px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid var(--black);
+}
+.e-mail-two {
+  padding: 43px 0 0;
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: -84px;
+}
+.rectangle-11 {
+  width: 500px;
+  height: 41px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  border: 1px solid var(--black);
+}
+.e-mail {
+  color: var(--black);
+  text-align: center;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.relative-wrapper-two {
+  position: relative;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.imja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: -154px;
+  top: -83px;
+}
+.otchestvo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: -83px;
+}
+.data-rozhdenija {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -85px;
+}
+.knopka-smeny-dannyh {
+  margin-left: 768px;
+  padding: 3px 0 0;
+  position: relative;
+}
+.rectangle-18-two {
+  width: 259px;
+  height: 38px;
+  background-color: rgba(108, 193, 255, 1);
+  border-radius: 50px;
+  position: relative;
+  border: 1px solid var(--black);
+}
+.smenit-dannye {
+  height: 40px;
+  width: 244px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  left: 7px;
+  top: 0;
+  font-family: var(--alegreya-32-regular-family);
+  font-size: var(--alegreya-32-regular-size);
+  font-weight: var(--alegreya-32-regular-weight);
+  line-height: var(--alegreya-32-regular-line-height);
+}
+.transportnaja-karta {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+.transportnoj-karty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.transportnoj-karty:not(:last-of-type) {
+  margin-right: 48px;
+}
+.rectangle-19 {
+  width: 616px;
+  height: 41px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid var(--black);
+}
+.vvedite-staryj-parol {
+  margin-right: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rectangle-23 {
+  width: 398px;
+  height: 41px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid var(--black);
+}
+.vvedite-novyj-parol {
+  margin-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.knopka-smeny-parolja {
+  margin-left: 139px;
+  padding: 3px 0 0;
+  position: relative;
+}
+.futer {
+  padding: 7px 563px 0 589px;
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+.vse-prava-zaschischeny-2023 {
+  max-width: 288px;
+  color: var(--black);
+  font-family: var(--poppins-20-thin-family);
+  font-size: var(--poppins-20-thin-size);
+  font-weight: var(--poppins-20-thin-weight);
+  line-height: var(--poppins-20-thin-line-height);
+}
