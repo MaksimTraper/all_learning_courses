@@ -1,0 +1,11 @@
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\bin\Debug\CukamotoWF.exe.config
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\bin\Debug\CukamotoWF.exe
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\bin\Debug\CukamotoWF.pdb
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\4Methods.csproj.AssemblyReference.cache
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\4Methods.csproj.SuggestedBindingRedirects.cache
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\CukamotoWF.Form1.resources
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\CukamotoWF.Properties.Resources.resources
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\4Methods.csproj.GenerateResource.cache
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\4Methods.csproj.CoreCompileInputs.cache
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\CukamotoWF.exe
+C:\Users\dekst\YandexDisk\All_from_laptop\учеба\СИИ\SAI Methods\4Methods\obj\Debug\CukamotoWF.pdb

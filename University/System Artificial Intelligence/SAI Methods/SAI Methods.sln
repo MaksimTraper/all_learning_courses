@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BellmanZade", "BellmanZade\BellmanZade.csproj", "{4858BD94-90CC-45CC-B3F4-34A01B8668B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4Methods", "4Methods\4Methods.csproj", "{7925E343-85A6-4A44-9E7B-634EEAA8653E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4858BD94-90CC-45CC-B3F4-34A01B8668B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4858BD94-90CC-45CC-B3F4-34A01B8668B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4858BD94-90CC-45CC-B3F4-34A01B8668B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4858BD94-90CC-45CC-B3F4-34A01B8668B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7925E343-85A6-4A44-9E7B-634EEAA8653E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7925E343-85A6-4A44-9E7B-634EEAA8653E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7925E343-85A6-4A44-9E7B-634EEAA8653E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7925E343-85A6-4A44-9E7B-634EEAA8653E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE41CF02-C873-4B2E-8AC3-038017E77465}
+	EndGlobalSection
+EndGlobal
